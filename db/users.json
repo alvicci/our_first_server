@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "full_name": "Adesuwa Ogunlade",
+        "email": "adesuwa.ogunlade@example.com",
+        "phone_number": "08161234567",
+        "username": "adesuwa_85",
+        "password": "naija2023"
+    },
+    {
+        "full_name": "Chijioke Adebayo",
+        "email": "chijioke.adebayo@example.com",
+        "phone_number": "08162345678",
+        "username": "chijioke_bayo",
+        "password": "lagos2023"
+    },
+    {
+        "full_name": "Aisha Mohammed",
+        "email": "aisha.mohammed@example.com",
+        "phone_number": "08160123456",
+        "username": "aisha_m",
+        "password": "kaduna2023"
+    }
+]
