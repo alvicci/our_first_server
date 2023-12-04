@@ -60,7 +60,7 @@ module.exports = function serverHandler(req, res) {
           (user) => user.username === username && user.password === password
         );
         if (existingUserIndex === -1) {
-          res.writeHead(404);
+          res.writeHead(401);
           res.end("Username or password is incorrect. Reconfirm details!");
           return;
         }
@@ -69,7 +69,16 @@ module.exports = function serverHandler(req, res) {
       });
     });
   } else if (routing === "/getusers" && req.method === "GET") {
-    res.end("We are here ooo!");
+    fs.readFile(usersFilePath, "utf8", (err, data) => {
+      if (err) {
+        console.log(err.message);
+        res.writeHead(500);
+        res.end("A terrible incident occured. It's your fault!");
+        return;
+      }
+      res.writeHead(200);
+      res.end(data);
+    });
   } else {
     res.writeHead(404);
     res.end("Reconfirm the endpoint and reattempt!");
