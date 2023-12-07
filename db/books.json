@@ -1,0 +1,42 @@
+[
+    {
+        "title": "The Midnight Library",
+        "author": "Matt Haig",
+        "year": 2020,
+        "loaned": false,
+        "returned": false,
+        "id": 1
+    },
+    {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "year": 2014,
+        "loaned": false,
+        "returned": false,
+        "id": 2
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": 1925,
+        "loaned": false,
+        "returned": false,
+        "id": 3
+    },
+    {
+        "title": "Educated",
+        "author": "Tara Westover",
+        "year": 2018,
+        "loaned": false,
+        "returned": false,
+        "id": 4
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "year": 1988,
+        "loaned": false,
+        "returned": false,
+        "id": 5
+    }
+]

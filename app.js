@@ -2,7 +2,7 @@ const {
   authenticateUser,
   createUser,
   getUsers,
-} = require("./users.controllers");
+} = require("./users.controller");
 
 module.exports = function serverHandler(req, res) {
   const routing = req.url;
