@@ -4,6 +4,7 @@
         "author": "Matt Haig",
         "year": 2020,
         "loaned": false,
+        "loanCount": 0,
         "returned": false,
         "id": 1
     },
@@ -12,6 +13,7 @@
         "author": "Yuval Noah Harari",
         "year": 2014,
         "loaned": false,
+        "loanCount": 0,
         "returned": false,
         "id": 2
     },
@@ -20,6 +22,7 @@
         "author": "F. Scott Fitzgerald",
         "year": 1925,
         "loaned": false,
+        "loanCount": 0,
         "returned": false,
         "id": 3
     },
@@ -28,14 +31,16 @@
         "author": "Tara Westover",
         "year": 2018,
         "loaned": false,
+        "loanCount": 0,
         "returned": false,
         "id": 4
     },
     {
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "year": 1988,
+        "title": "Things fall apart",
+        "author": "Chinua Achebe",
+        "year": 2000,
         "loaned": false,
+        "loanCount": 0,
         "returned": false,
         "id": 5
     }

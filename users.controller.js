@@ -80,4 +80,34 @@ const getUsers = function (req, res) {
   });
 };
 
-module.exports = { authenticateUser, createUser, getUsers };
+const authenticate = function (req, res) {
+  return new Promise((resolve, reject) => {
+    let body = [];
+    req.on("data", (chunk) => {
+      body.push(chunk);
+    });
+    req.on("end", () => {
+      const parsedBody = Buffer.concat(body).toString();
+      const { username, password } = JSON.parse(parsedBody);
+      console.log(username, password);
+      fs.readFile(usersFilePath, "utf8", (err, data) => {
+        if (err) {
+          console.log(err.message);
+          res.writeHead(500);
+          res.end("A terrible incident occured. It's your fault!");
+          return;
+        }
+        const allUsers = JSON.parse(data);
+        const findUser = allUsers.find(
+          (user) => user.username === username && user.password === password
+        );
+        if (!findUser) {
+          reject("User not found");
+        }
+        resolve();
+      });
+    });
+  });
+};
+
+module.exports = { authenticateUser, createUser, getUsers, authenticate };
